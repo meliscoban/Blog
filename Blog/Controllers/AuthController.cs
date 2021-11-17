@@ -1,5 +1,5 @@
 ﻿using Blog.Models.Data;
-using Blog.ViewModels.Author.Login;
+using Blog.ViewModels.Auth.Login;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Blog.Controllers
 {
-    public class AuthorController : Controller
+    public class AuthController : Controller
     {
         private readonly DatabaseContext _context;
 
-        public AuthorController(DatabaseContext context)
+        public AuthController(DatabaseContext context)
         {
             _context = context;
         }
